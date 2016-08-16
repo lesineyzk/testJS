@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <SCRIPT TYPE="text/javascript">
+            function buttonClick()
+            {
+                //JS调用OC方法jakilllog  方式一
+                jakilllog("hello world");
+                //JS调用OC方法shouldStartLoadWithRequest 方式二
+                click();
+            }
+        //OC调用JS方法
+        function alertClick()
+        {
+            alert("hello world");
+        }
+        //JS调用OC方法shouldStartLoadWithRequest 方式二
+        function click(){
+            var url="ClickImage";
+            document.location = url;
+        }
+        </SCRIPT>
+        
+    </head>
+    <body>
+        <div>
+            
+            <img src="http://www.scimg.jb51.net/allimg/160716/105-160G61F250436.jpg" style="width: 650px; height: 365px">
+                <button id="hallo" onclick="buttonClick()"> 点击button</button>
+                
+        </div>
+    </body>
+</html>
